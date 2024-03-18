@@ -1,0 +1,13 @@
+// pages
+
+aplicant
+aplicants
+aplicantsAdmin
+recruiterEmployee
+vacancies
+vacanciesRecruiters
+vacanciesAdmin
+
+
+breadcrumbs?
+check auth forms
