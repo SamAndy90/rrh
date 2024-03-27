@@ -66,10 +66,10 @@ export function SelectInput(props: SelectInputProps) {
         </label>
       )}
       <Listbox value={value} onChange={onChange} multiple={multiple}>
-        <div className={"relative min-w-[280px]"}>
+        <div className={"relative min-w-[240px]"}>
           <Listbox.Button
             className={
-              "group flex w-full items-center rounded border border-gray-100 bg-white text-left text-base transition-colors hover:border-hub_green-500"
+              "group flex w-full items-center rounded border border-gray-200 bg-white text-left text-base transition-colors hover:border-hub_green-600"
             }
           >
             <span className={"flex-1 px-4 py-3"}>{displayValue}</span>

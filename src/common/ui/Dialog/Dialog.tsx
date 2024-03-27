@@ -40,7 +40,7 @@ export function Dialog(props: DialogProps) {
         >
           <div
             className={twMerge(
-              "fixed inset-0 z-40 bg-black/60 backdrop-blur-sm",
+              "fixed inset-0 z-[190] bg-black/60 backdrop-blur-sm",
               className?.overlay,
             )}
             aria-hidden
@@ -58,13 +58,13 @@ export function Dialog(props: DialogProps) {
         >
           <HuiDialog.Panel
             className={twMerge(
-              `fixed left-1/2 top-1/2 z-40 max-h-full w-[500px] max-w-[calc(100%-20px)] -translate-x-1/2 -translate-y-1/2 overflow-y-auto overflow-x-hidden py-4 pr-2 md:pr-4`,
+              `fixed left-1/2 top-1/2 z-[200] max-h-full w-[500px] max-w-[calc(100%-20px)] -translate-x-1/2 -translate-y-1/2 overflow-y-auto overflow-x-hidden`,
               className?.contentWrapper,
             )}
           >
             <div
               className={twMerge(
-                "relative overflow-hidden rounded-xl bg-white shadow-md",
+                "relative overflow-hidden rounded-xl bg-white px-4 py-3 shadow-md",
                 className?.content,
               )}
             >

@@ -1,16 +1,15 @@
 import TopBG from "common/TopBg";
-import { Container, Section } from "common/ui";
+import { Section } from "common/ui";
+import AuthWrapper from "components/Auth/AuthWrapper";
 import { LoginForm } from "components/Auth/LoginForm";
 
 export default function LoginPage() {
   return (
-    <>
+    <Section className={"flex h-full flex-col"}>
       <TopBG />
-      <Section size={"default"}>
-        <Container>
-          <LoginForm />
-        </Container>
-      </Section>
-    </>
+      <AuthWrapper>
+        <LoginForm />
+      </AuthWrapper>
+    </Section>
   );
 }

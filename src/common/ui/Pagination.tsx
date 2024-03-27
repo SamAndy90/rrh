@@ -57,7 +57,7 @@ export function Pagination(props: PaginationProps) {
                       button: clsx(
                         "flex h-9 w-9 items-center justify-center rounded border text-sm transition-colors md:h-10 md:w-10",
                         {
-                          "border-hub_green-100 bg-hub_green-50 font-medium text-hub_green-500":
+                          "border-hub_green-100 bg-hub_green-50 font-medium text-hub_green-600":
                             page === activePage,
                           "border-gray-200 hover:border-hub_green-900":
                             page !== activePage,

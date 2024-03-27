@@ -38,7 +38,7 @@ export function Header() {
     <header
       className={twMerge(
         clsx(
-          "absolute left-0 top-0 z-[9999] w-full bg-transparent py-7 transition-all duration-500",
+          "absolute left-0 top-0 z-[110] w-full bg-transparent py-7 transition-all duration-500",
           {
             "fixed bg-hub_green-900 py-2.5": sticky,
           },

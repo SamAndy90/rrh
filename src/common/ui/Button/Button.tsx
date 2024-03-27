@@ -5,7 +5,14 @@ import { ButtonBase, ButtonBaseProps } from "common/ui";
 
 export type ButtonProps<T> = {
   size?: "small" | "normal" | "large";
-  colorVariant?: "primary" | "secondary" | "outlined" | "ghost" | "success";
+  colorVariant?:
+    | "primary"
+    | "secondary"
+    | "outlined"
+    | "ghost"
+    | "success"
+    | "upload"
+    | "danger";
   fullWidth?: boolean;
   square?: boolean;
 } & ButtonBaseProps<T>;
@@ -49,14 +56,13 @@ export function Button<T>(props: ButtonProps<T>) {
             },
             {
               // Secondary
-              "border-2 border-gray-900 text-gray-900":
-                colorVariant === "secondary",
-              "hover:bg-gray-50 active:bg-gray-200 disabled:hover:bg-transparent":
+              "bg-hub_green-700": colorVariant === "secondary",
+              "hover:bg-hub_green-500 active:bg-hub_green-600 disabled:hover:bg-hub_green-700":
                 colorVariant === "secondary" && !loading,
             },
             {
               // Ghost
-              "text-mediumBlue-900": colorVariant === "ghost",
+              "text-blue-900": colorVariant === "ghost",
               "hover:bg-gray-50 active:bg-gray-100 disabled:hover:bg-transparent":
                 colorVariant === "ghost" && !loading,
             },
@@ -65,6 +71,18 @@ export function Button<T>(props: ButtonProps<T>) {
               "bg-status-success text-white": colorVariant === "success",
               "disabled:hover:bg-status-success hover:bg-gray-800 active:bg-gray-900":
                 colorVariant === "success" && !loading,
+            },
+            {
+              // Upload
+              "bg-blue-500": colorVariant === "upload",
+              "hover:bg-blue-700 active:bg-blue-600 disabled:hover:bg-blue-500":
+                colorVariant === "upload" && !loading,
+            },
+            {
+              // Danger
+              "bg-red-500 text-red-50": colorVariant === "danger",
+              "hover:bg-red-400 active:bg-red-600 disabled:hover:bg-red-500":
+                colorVariant === "danger" && !loading,
             },
             {
               "w-full": fullWidth,

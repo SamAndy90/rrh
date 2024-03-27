@@ -13,7 +13,7 @@ import Logo1 from "./static/company_logo1.jpg";
 import Logo2 from "./static/company_logo2.jpg";
 import Logo3 from "./static/company_logo3.jpg";
 
-export default function VacanciesPage() {
+export default function VacanciesRecruitersPage() {
   const [filter, setFilter] = useState({ sort: "", order: "", count: "5" });
   const searchParams = useSearchParams();
   const pages = 5;
